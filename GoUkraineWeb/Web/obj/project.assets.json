@@ -6720,28 +6720,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\Inna\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\zRepos\\Inna Diduh\\GoUkraine\\GoUkraineWeb\\Web\\Web.csproj",
+      "projectUniqueName": "C:\\Users\\Inna\\Source\\Repos\\GoUkraine\\GoUkraineWeb\\Web\\Web.csproj",
       "projectName": "Web",
-      "projectPath": "D:\\zRepos\\Inna Diduh\\GoUkraine\\GoUkraineWeb\\Web\\Web.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\zRepos\\Inna Diduh\\GoUkraine\\GoUkraineWeb\\Web\\obj\\",
+      "projectPath": "C:\\Users\\Inna\\Source\\Repos\\GoUkraine\\GoUkraineWeb\\Web\\Web.csproj",
+      "packagesPath": "C:\\Users\\Inna\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Inna\\Source\\Repos\\GoUkraine\\GoUkraineWeb\\Web\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Inna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://tfs.additiv.ch/additiv/_packaging/additiv-Common/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {

@@ -788,3 +788,7 @@ C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Web.cspro
 C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Web.genruntimeconfig.cache
 C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Shared\_Footer.cshtml.g.cs
 C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Shared\_Header.cshtml.g.cs
+D:\zRepos\Inna Diduh\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Shared\_Footer.cshtml.g.cs
+D:\zRepos\Inna Diduh\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Shared\_Header.cshtml.g.cs
+C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Home\Contacts.cshtml.g.cs

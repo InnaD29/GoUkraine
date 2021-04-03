@@ -1,8 +1,225 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+  ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<link href="~/css/slider-main.css" rel="stylesheet" />
+<!---------------SLIDER------------------>
+<div class="slider-main">
+  <div class="slider-container">
+    <section class="slider curry">
+      <section class="slide" id="slide-0"></section>
+      <section class="slide-text">
+        <h2 class="curry-header">Насолоджуйтесь подорожжю своєї мрії</h2>
+        <a href="/home/Projects">Докладіше</a>
+      </section> <!--slide-text-->
+    </section> <!--slider-->
+    <section class="slider">
+      <section class="slide" id="slide-1"></section>
+      <section class="slide-text">
+        <h2> Обирайте <span> комфортний</span> відпочинок</h2>
+        <a href="/home/Projects" class="text-slide">Докладіше</a>
+      </section> <!--slide-text-->
+    </section> <!--slider-->
+    <section class="slider">
+      <section class="slide" id="slide-2"></section>
+      <section class="slide-text text-slide">
+        <h2>якісний та<span>  безпечний</span> відпочинок</h2>
+        <a href="/home/Projects" class="text-slide">Докладіше</a>
+      </section>  <!--slide-text-->
+    </section> <!--slider-->
+  </div>
 </div>
+<div class="home">
+  <div class="banner-wave">
+    <img src="~/images/wave-bg.png" />
+  </div>
+</div>
+<!--OUR TOURS-->
+<div class="tours">
+  <div class="block">
+    <div class="heading">
+      <h2>Найкращі пропозиції</h2>
+      <p>Подивіться наші найкращі тури</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 ">
+          <figure class="figure">
+            <img src="~/images/bg.jpg" class="figure-img img-fluid rounded" alt="Турція">
+            <h6>Турція</h6>
+            <figcaption class="figure-caption">Анталія, Аланія...</figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <figure class="figure">
+             <img src="~/images/bg.jpg" class="figure-img img-fluid rounded" alt="Египит">
+            <h6>Египит</h6>
+            <figcaption class="figure-caption">Хургада, Шарм эль шейх...</figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <figure class="figure">
+            <img src="~/images/bg.jpg" class="figure-img img-fluid rounded" alt="Україна">
+            <h6>Україна</h6>
+            <figcaption class="figure-caption">Скадовськ, Дністер...</figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <figure class="figure">
+            <img src="~/images/bg.jpg" class="figure-img img-fluid rounded" alt="Европа">
+            <h6>Европа</h6>
+            <figcaption class="figure-caption">Болгарія, Греція...</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="d-block text-center pb-5 pt-3">
+        <a href="#" class="btn text-center">Дивитися всі тури</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Why goUkraine-->
+<div class="why-goukraine container-fluid m-0 p-0 block ">
+  <div class="container box-conteiner">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 ">
+        <div class="box">
+          <span>
+            <svg>
+              
+              <use xlink:href="/svg/sprite.svg#respect"></use>
+            </svg>
+          </span>
+          <p>Співпрацюємо з надійними та перевіреними партнерами туристичної сфери. </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="box">
+          <span>
+            <svg>
+              <use xlink:href="svg/sprite.svg#goal"></use>
+            </svg>
+          </span>
+          <p>Ми недосконалі, але ми працюємо над цим. Наша ціль бути кращим для наших туристів</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="box">
+           <span>
+            <svg>
+              <use xlink:href="svg/sprite.svg#24-hours"></use>
+            </svg>
+          </span>
+          <p>Цілодобова підтримка клієнтів. Ви відпочиваєте, ми працюємо, зв'язок з Вами упродовж всієї подорожі.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <div class="box">
+          <span>
+            <svg>
+             <use xlink:href="svg/sprite.svg#safe"></use>
+            </svg>
+          </span>
+          <p>Ми за безпечну подорож, що і гарантуємо в межах туристичного продукту. Будь ласка пам'ятайте про це!</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="box">
+          <span>
+            <svg>
+              <use xlink:href="svg/sprite.svg#doubt"></use>
+            </svg>
+          </span>
+          <p>Ви би хотіли самостійно створити туристичну подорож але вагаєтесь, ми завжди раді допомогти. Безкоштовна косультація.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="box">
+           <span>
+             <svg>
+               <use xlink:href="svg/sprite.svg#information"></use>
+             </svg>
+          </span>
+          <p>Страхування, бронювання та транспортні перевезення з нами. Будьте з нами, ми завжди раді Вас бачити в нашому офісі.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--POST-->
+<div class="container post block">
+  <div class="heading">
+    <h2>Будь в курсі туристичних подій</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-sm-6">
+      <figure class="figure">
+        <img src="~/images/bg.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        <h6>Відвідування ОАЕ</h6>
+        <p>Опублікував адмін. XX.XXXX</p>
+        <figcaption class="figure-caption">Багато людей вважають, що подорожі просто дорогі...</figcaption>
+        <a href="#" class="btn">Дізнатися більше</a>
+      </figure>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <figure class="figure">
+        <img src="~/images/bg.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        <h6>Відвідування Европи</h6>
+        <p>Опублікував адмін. XX.XXXX</p>
+        <figcaption class="figure-caption">Багато людей вважають, що подорожі просто дорогі...</figcaption>
+        <a href="#" class="btn">Дізнатися більше</a>
+      </figure>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <figure class="figure">
+        <img src="~/images/bg.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        <h6>Найкращі напрямки 2021 року</h6>
+        <p>Опублікував адмін. XX.XXXX</p>
+        <figcaption class="figure-caption">Багато людей вважають, що подорожі просто дорогі...</figcaption>
+        <a href="#" class="btn">Дізнатися більше</a>
+      </figure>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <figure class="figure">
+        <img src="~/images/bg.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        <h6>Найкращі напрямки 2021 року</h6>
+        <p>Опублікував адмін. XX.XXXX</p>
+        <figcaption class="figure-caption">Багато людей вважають, що подорожі просто дорогі...</figcaption>
+        <a href="#" class="btn">Дізнатися більше</a>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid find-tour-banner">
+  <div class="text-find-tour row">
+    <div class="col-lg-9 col-sm-12 text-right">
+      <h2>Знайдіть незабутні враженння з <span>нами</span> </h2>
+      <a href="#" class="btn">Шукати тур</a>
+    </div>
+  </div>
+</div>
+<!--PARTNER-->
+<div class="container block">
+  <div class="heading">
+    <h2>Наші партнери</h2>
+  </div>
+  <div class="row partners">
+    <div class="col-lg-3 col-sm-6">
+      <img src="~/images/partners/anex.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <img src="~/images/partners/joinup.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <img src="~/images/partners/pegas.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <img src="~/images/partners/tui.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+    </div>
+  </div>
+</div>
+  
+<script src="~/js/slider/script.js"></script>

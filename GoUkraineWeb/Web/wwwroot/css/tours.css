@@ -1,0 +1,191 @@
+﻿.hotel-star svg {
+    width: 15px;
+    height: 15px;
+    fill: #ffd101;
+}
+.hotel-star p {
+    color: #fff;
+    font-weight: 700;
+    padding-top: 5px;
+}
+.hero-carousel {
+    z-index: 1001;
+}
+.side-filter {
+    margin-left: 150px;
+}
+.card {
+    color: #2a7ba8;
+}
+.card-header h5 {font-size: 18px;}
+
+/******************TOURS******************************/
+.tours {
+    margin-top: 110px;
+    padding: 50px 0;
+}
+.tour {
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+.place {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+.img-tour img {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.img-description {
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+.date-out svg{
+   fill: #fff;
+   width: 22px;
+   height: 22px;
+}
+.price  {
+    color: #fff;
+    padding: 5px 15px;
+}
+.more {
+    background: #ffd101;
+
+}
+a.more {
+     display: flex;
+     justify-content: center;
+     display: flex;
+     align-items: center;
+}
+.more:hover {
+     background: #2a7ba8;
+     color: #ffd101;
+ }
+a.more {
+    color: #2a7ba8;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.more a:hover {
+    color: #ffd101;
+}
+.star {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.star p {
+    color: #fff;
+    font-weight: 800;
+}
+
+/************************FILTER**********************************/
+input.form-check-input {
+    width: 17px;
+    height: 17px;
+}
+
+.form-check span {
+    font-size: 17px;
+    padding-left: 5px;
+}
+.form-check input:hover {
+    cursor: pointer;
+}
+
+.form-check:hover {
+    cursor: pointer;
+}
+
+.form-check label:hover {
+    cursor: pointer;
+}
+
+.filter {
+    padding: 0 20px;
+}
+
+/************************FILTER TOGGLE*********************/
+
+.sidenav {
+   width: 100%;
+    position: absolute;
+    z-index: 1080;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+ }
+
+ .sidenav a:hover {
+    color: #f1f1f1;
+ }
+
+ .sidenav .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 50px;
+ }
+ .sidenav a {
+     font-size: 18px;
+ }
+ .openbtn {
+    display: none;
+    margin: 0 auto;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid #2a7ba8;
+    background: #fff;
+    color: #2a7ba8;
+    padding: 10px 15px;
+}
+ .openbtn svg {
+    width: 25px;
+    height: 25px;
+    fill: #2a7ba8;
+}
+.closebtn {
+    display: none;
+}
+.openbtn:hover {
+    background-color: #ffd101;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+.open-button {
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+}

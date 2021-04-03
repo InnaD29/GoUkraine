@@ -6,8 +6,8 @@
   <title>GoUkraine</title>
   <link rel="icon" href="~/Content/Images/logo.png" />
   <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="~/css/site.css" />
-  </head>
+  <link href="~/css/site.css" rel="stylesheet" />
+</head>
 <body>
   <header>
     @Html.Partial("_Header")
@@ -25,6 +25,7 @@
   <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="~/js/site.js" asp-append-version="true"></script>
   <script src="~/js/slider/script.js"></script>
+  <script src="~/js/slider/popup-img.js"></script>
   @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -1,4 +1,26 @@
-﻿<nav class="navbar navbar-expand-lg text-white">
+﻿
+<div class="contacts-header text-center">
+  <span class="vodafone">
+    <svg>
+      <use xlink:href="/svg/sprite.svg#vodafone_6830"></use>
+    </svg><span class="text">+38 066 995 7091</span>
+  </span>
+  <span class="kyivstar">
+    <svg>
+      <use xlink:href="/svg/sprite.svg#Kyivstar_GSM"></use>
+    </svg><span class="text">+38 067 995 7091</span>
+  </span>
+  <a class="open-button" onclick="openForm()"> <span class="text">Зателефонуйте мені</span> </a>
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <p>Введіть номер телефону</p>
+      <input type="text" class="text-primary" placeholder="+38 (0ХХ) ХХХ ХХ ХХ" name="number" required>
+      <button type="button" class="btn" onclick="closeForm()">Зателефонувати</button>
+    </form>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg">
   <h1 class="navbar-brand logo "><img src="~/images/logo.png" alt="GoUkraine" /></h1>
   <button class="navbar-toggler navbar-dark"
           type="button"
@@ -9,22 +31,37 @@
           aria-label="Toggle navigation">
     <span class="navbar-toggler-icon "></span>
   </button>
-  <section class="collapse navbar-collapse justify-content-end text-center"
-           id="navbartoggler">
+  <section class="collapse navbar-collapse justify-content-end text-center" id="navbartoggler">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link " href="/home/index">ГОЛОВНА</a>
+        <a class="nav-link " href="/home/Index">Головна</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/home/Tours">ТУРИ</a>
+        <a class="nav-link " href="/home/About">Про нас</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="/Home/About">ПРО НАС</a>
+        <a class="nav-link" href="/home/ToursOfUkraine">Тури Україною</a>
       </li>
-      <li class="nav-item"><a class="nav-link" href="/home/Blog">БЛОГ</a></li>
       <li class="nav-item">
-        <a class="nav-link" href="/home/Contact">КОНТАКТИ</a>
+        <a class="nav-link" href="/home/Tours">Пошук турів</a>
       </li>
-    </ul>
+      <li class="nav-item">
+        <a class="nav-link" href="/home/HotTours">Гарячі тури</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/home/BusTours">Автобусні тури</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/home/Gallery">Галерея</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/home/Blog">Блог</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/home/Contacts">Контакти</a>
+      </li>
+     </ul>
+    
   </section><!--collapse navbar-collapse -->
 </nav>

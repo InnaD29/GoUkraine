@@ -1,0 +1,405 @@
+﻿@{
+  ViewData["Title"] = "Tours Page";
+}
+<link href="~/css/tours.css" rel="stylesheet" />
+<div class="container-fluid m-0 p-0">
+  <div class="hero page hero-carousel">
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="1500">
+          <img src="~/images/tours/1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-interval="1500">
+          <img src="~/images/tours/2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="~/images/tours/3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev icon" href="#carouselExampleInterval" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="container  block top-0 pt-5 pl-0 pr-0">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="heading tours">
+        <h2>Обери тур на будь який смак</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 mb-5 ">
+      <button class="openbtn" onclick="openNav()">
+        <span>
+          <svg>
+            <use xlink:href="/svg/sprite.svg#filter"></use>
+          </svg>
+        </span><span class="pl-1">Фільтри</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+  <div class="d-flex justify-content-between">
+    @*************FILTER**********************@
+    <div class="side-filter" id="mySidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="filter">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="dropdown-toggle border-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Куди поїхати
+                    </button>
+                  </h5>
+                </div>
+                @**************************************CONTENTS*************************************************@
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <div class="form-check" data-sort-value="allCountries" >
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="1"><span>Всі</span>
+                      </label>
+                    </div>
+                    <div class="form-check" data-sort-value="eu">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="2"><span>Європа</span>
+                      </label>
+                    </div>
+                    <div class="form-check" data-sort-value="ukr">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="3"><span>України</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label" data-sort-value="asia">
+                        <input type="checkbox" class="form-check-input" value="4"><span>Азія</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label" data-sort-value="africa">
+                        <input type="checkbox" class="form-check-input" value="5"><span>Африка</span>
+                      </label>
+                    </div>
+                    <div class="form-check" data-sort-value="northusa">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="6"><span>Північна Америка</span>
+                      </label>
+                    </div>
+                    <div class="form-check" data-sort-value="westusa">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="7"><span>Південна Америка</span>
+                      </label>
+                    </div>
+                    <div class="form-check" data-sort-value="australia">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="8"><span>Австралія</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              @*****************************************MEAL****************************************@
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="dropdown-toggle border-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Тип харчування
+                    </button>
+                  </h5>
+                </div>
+                <div class="card-body">
+                  <div class="form-check" >
+                    <label class="form-check-label" data-sort-value="mealall">
+                      <input type="checkbox" class="form-check-input" value="9"><span>Будь який</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label"  data-sort-value="nomeal">
+                      <input type="checkbox" class="form-check-input" value="10"><span>Без харчування</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label"  data-sort-value="breakfast">
+                      <input type="checkbox" class="form-check-input" value="11"><span>Сніданок</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label" data-sort-value="breakfastAndDinner">
+                      <input type="checkbox" class="form-check-input" value="12"><span>Сніданок та вечеря</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label" data-sort-value="third-meal">
+                      <input type="checkbox" class="form-check-input" value=""><span>Три разове харчування</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label" data-sort-value="allinclusive">
+                      <input type="checkbox" class="form-check-input" value="13"><span>Все включено</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              @*******************************************DATE*****************************************@
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="dropdown-toggle border-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Дата подорожі
+                    </button>
+                  </h5>
+                </div>
+              </div>
+              @*****************************************FROM******************************************@
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="dropdown-toggle border-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Виїзд з
+                    </button>
+                  </h5>
+                </div>
+                <div class="card-body hotel-star">
+                  <div class="form-check allcities" data-sort-value="allcities">
+                    <label class="form-check-label" >
+                      <input type="checkbox" class="form-check-input" value=""> <span>Всі</span>
+                    </label>
+                  </div>
+                  <div class="form-check"  data-sort-value="kiev">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""> <span>Київ</span>
+                    </label>
+                  </div>
+                  <div class="form-check" data-sort-value="lviv">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""><span>Львів</span>
+                    </label>
+                  </div>
+                  <div class="form-check" data-sort-value="odesa">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""><span>Одеса</span>
+                    </label>
+                  </div>
+                  <div class="form-check" data-sort-value="zaporizhzhia">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""><span>Запоріжжя</span>
+                    </label>
+                  </div>
+                  <div class="form-check" data-sort-value="dnipro">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""><span>Дніпро</span>
+                    </label>
+                  </div>
+                  <div class="form-check" data-sort-value="dnipro">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""><span>Харків</span>
+                    </label>
+                  </div>
+                  <div class="form-check" data-sort-value="herson">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""><span>Херсон</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              @**************************************HOTEL*********************************@
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="dropdown-toggle border-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Класс готелю
+                    </button>
+                  </h5>
+                </div>
+                <div class="card-body hotel-star">
+                  <div class="form-check" data-sort-value="all-hotel">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""><span>Всі</span>
+                    </label>
+                  </div>
+                  <div class="form-check" data-sort-value="oneStar">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""><span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="form-check" data-sort-value="twoStar">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""><span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                      <span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="form-check" data-sort-value="threeStar">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""><span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                      <span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                      <span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="form-check" data-sort-value="fourStar">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""><span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                      <span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                      <span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                      <span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="form-check" data-sort-value="fiveStar">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""><span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                      <span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                      <span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                      <span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                      <span>
+                        <svg>
+                          <use xlink:href="/svg/sprite.svg#star"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+             @* ***************************************************ANIMALS*******************************@
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="dropdown-toggle border-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      З тваринами
+                    </button>
+                  </h5>
+                </div>
+                <div class="card-body">
+                  <div class="form-check"  data-sort-value="bigAnimal">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""><span>Великі</span>
+                    </label>
+                  </div>
+                  <div class="form-check" data-sort-value="midAnimal">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value=""><span>Середні</span>
+                    </label>
+                  </div>
+                  <div class="form-check"  data-sort-value="smallAnimal">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input custom-checkbox" value=""><span>Маленькі</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @*********************BLOCK TOURS******************************@
+  <div class="container ml-1">
+    <div class="row m-0">
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="tour">
+          <div class="img-tour">
+            <img src="~/images/tours/9.jpg" class="img-fluid rounded" alt="Турція">
+            <div class="img-description d-flex justify-content-between">
+              <div class="price">
+                <p class="m-0">Вартість туру: 2000 грн.</p>
+                <p class="m-0">за людину</p>
+              </div>
+              <a href="/home/DescriptionTour" class="more">
+                <span>Детельніше</span>
+              </a>
+            </div>
+            <div class="star hotel-star">
+              <span>
+                <svg>
+                  <use xlink:href="/svg/sprite.svg#star"></use>
+                </svg>
+              </span>
+              <p class="date-out">виїзд: 18/07/21</p>
+            </div>
+          </div>
+        </div>
+        <div class="place">
+          <p class="m-0">Oz Hotels Sui Resort</p>
+          <p class="p-0">Египит, Хургада</p>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+</div>
+  <script src="~/js/tours.js"></script>
+

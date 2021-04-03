@@ -1,108 +1,87 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-body {
-    font-family: 'Segoe UI' Arial, Helvetica, sans-serif;
+﻿body {font-family: 'Segoe UI' Arial, Helvetica, sans-serif;}
+.page {
+    position: relative;
+    top: 130px;
+    left: 0;
 }
+main {z-index: -1;}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1005;
+}
+.hero-text {height: 100%;}
+.hero-text {
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+a.nav-link {color: #808080; text-transform: none;}
 a.navbar-brand {
     text-align: center;
     white-space: normal;
-}
+ }
 .navbar {
-    font-size: 13px;
-    padding: 30px;
-    z-index: 3;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0 30px;
 }
-.logo img {width: 200px;}
+.logo img {
+    width: 200px;
+}
 .btn {
     color: #fff;
     background: #2a7ba8;
     font-size: 13px;
 }
-.btn:hover {
-    background: #ffd101;
-    color: #2a7ba8;
+    .btn:hover {
+        background: #ffd101;
+    }
+
+.block {
+    background: #f5f5f5;
+    margin-bottom: 50px;
+    position: relative;
+    left: 0;
+    z-index: 999;
 }
-/* Sticky main styles
--------------------------------------------------- */
-.home {
-    width: 100%;
-    height: 100vh;
-}
-.banner-wave img {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
- }
-/*/TOURS*/
-.block {margin-bottom: 50px;}
-.block h2{
-   color: #2a7ba8;
-   text-transform: capitalize;
-   font-weight: 400;
-   font-size: 3em;
-}
-.block p {color: #808080;}
+    .block p {
+        color: #808080;
+    }
 .heading {
     padding: 50px;
     text-align: center;
 }
-.tours {background: #f5f5f5;}
-.boxes {
-    height: 100vh;
-    width: 100%;
-}
-.why-goukraine {
-    background: url(../images/why-goukraine.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-}
-.why-goukraine svg {
-    fill: #2a7ba8;
-    width: 100px;
-    height: 100px;
-}
-.box-conteiner {
-    padding-top: 160px;
-    padding-bottom: 160px;
-    text-align: center;
-}
-.box {
-    background: #fff;
-    margin: 10px 10px; 
-    padding:  20px;
-}
-.box p{
-    padding: 10px 0;
-}
-.box img {
-    width: 50px;
-    height: 50px;
-}
-.post  {text-align: center;}
-.post figcaption {padding-bottom: 20px;}
-.find-tour-banner {
-    background:  url(../images/island.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.text-find-tour {
-    padding: 250px 0;
-    margin: 0;
-}
-.find-tour-banner h2{
-    color: #fff;
-    font-size: 46px;
+.block h2 {
+    color: #2a7ba8;
     font-weight: 400;
-    text-transform: capitalize;
+    font-size: 3em;
 }
-.find-tour-banner span {color: #ffd101;}
-.partners img{
-    display: block;
-    margin: 0 auto;
+.contacts-header {
+    padding: 10px 0 0 0;
+    color: #000000;
 }
+.contacts-header a{
+     color: #2a7ba8;
+     text-transform: none;
+     font-weight: 700;
+}
+.contacts-header span {
+    padding: 10px;
+}
+.contacts-header svg {
+    width: 25px;
+    height: 25px;
+}
+.vodafone svg {
+    fill: red;
+}
+.kyivstar svg {
+    fill: #2a7ba8;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 footer {
@@ -121,7 +100,10 @@ footer li {
     list-style: none;
     padding: 5px 0;
 }
-footer a {text-transform: capitalize;}
+footer a {
+    text-transform: capitalize;
+    color: #fff;
+}
 footer a:hover{
     text-decoration: none;
     color: #c2bebe;
@@ -142,6 +124,68 @@ svg.whatsapp {fill: #43d854;}
 .footer-copyright {
     background: #232323;
 }
+.navbar-scroll {
+    background: #232323;
+    transition: all .6s ease;
+}
+.header-item {color: #fff;}
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+    /* Full-width input fields */
+    .form-container input[type=text], .form-container input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+
+        /* When the inputs get focus, do something */
+        .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+    /* Set a style for the submit/login button */
+    .form-container .btn {
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
+
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+        background-color: red;
+    }
+.open-button {
+    cursor: pointer;
+    color: #2a7ba8;
+}
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
 /* Sticky media styles
 -------------------------------------------------- */
 @media (min-width: 768px) {

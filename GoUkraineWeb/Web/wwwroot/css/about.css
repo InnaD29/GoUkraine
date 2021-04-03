@@ -1,0 +1,35 @@
+﻿
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/about/about-hero.JPG) no-repeat;
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: -ms-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.about-us {
+    margin-top: 100px;
+}
+.about-us img {
+    width: 100%;
+    text-align: center;
+}
+
+.about-text {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+    .about h3 {
+        color: #2a7ba8;
+    }
+.experts {
+    margin: 130px 0 50px 0;
+}
+    
+

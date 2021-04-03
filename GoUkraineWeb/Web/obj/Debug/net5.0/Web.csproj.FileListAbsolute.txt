@@ -792,3 +792,10 @@ D:\zRepos\Inna Diduh\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Sha
 D:\zRepos\Inna Diduh\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Shared\_Header.cshtml.g.cs
 C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
 C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Home\Contacts.cshtml.g.cs
+C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Home\Gallery.cshtml.g.cs
+C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Home\Blog.cshtml.g.cs
+C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Home\Tours.cshtml.g.cs
+C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Home\BusTours.cshtml.g.cs
+C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Home\HotTours.cshtml.g.cs
+C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Home\ToursOfUkraine.cshtml.g.cs
+C:\Users\Inna\Source\Repos\GoUkraine\GoUkraineWeb\Web\obj\Debug\net5.0\Razor\Views\Home\DescriptionTour.cshtml.g.cs

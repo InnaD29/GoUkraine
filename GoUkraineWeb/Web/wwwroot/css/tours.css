@@ -1,13 +1,4 @@
-﻿.hotel-star svg {
-    width: 15px;
-    height: 15px;
-    fill: #ffd101;
-}
-.hotel-star p {
-    color: #fff;
-    font-weight: 700;
-    padding-top: 5px;
-}
+﻿
 .hero-carousel {
     z-index: 1001;
 }
@@ -118,7 +109,7 @@ input.form-check-input {
 /************************FILTER TOGGLE*********************/
 
 .sidenav {
-   width: 100%;
+    width: 100%;
     position: absolute;
     z-index: 1080;
     top: 0;

@@ -12,10 +12,20 @@
   </span>
   <a class="open-button" onclick="openForm()"> <span class="text">Зателефонуйте мені</span> </a>
   <div class="form-popup" id="myForm">
-    <form action="/action_page.php" class="form-container">
-      <p>Введіть номер телефону</p>
+    <form class="form-container bg-light rounded d-none">
+      <span aria-hidden="true" class="btnClose d-flex justify-content-end pt-0" role="button">&times;</span>
+      <p class="font-weight-bold">Введіть номер телефону</p>
       <input type="text" class="text-primary" placeholder="+38 (0ХХ) ХХХ ХХ ХХ" name="number" required>
       <button type="button" class="btn" onclick="closeForm()">Зателефонувати</button>
+    </form>
+    <form class="form-container text-center success-form bg-light d-none">
+      <p class="font-weight-bold m-0 pt-5">Дякую!</p>
+      <p class="font-weight-bold pb-2">Наш мененджер звяжеться з Вами за декілька хвилин</p>
+      <span>
+        <svg>
+          <use xlink:href="/svg/sprite.svg#check-mark"></use>
+        </svg>
+      </span>
     </form>
   </div>
 </div>

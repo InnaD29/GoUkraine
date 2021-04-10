@@ -1,1 +1,92 @@
-﻿
+﻿/************************Carousel****************/
+.carousel-container {
+    top: 150px;
+    padding-bottom: 150px;
+}
+.carousel {
+    position: relative;
+   bottom: 0;
+    left: 0;
+}
+.carousel-item img {object-fit: cover;}
+
+#carousel-thumbs {
+    background: rgba(255,255,255,.3);
+    bottom: 0;
+    left: 0;
+    padding: 0 50px;
+    right: 0;
+}
+#carousel-thumbs img {
+   border: 5px solid transparent;
+   cursor: pointer;
+}
+#carousel-thumbs img:hover {
+   border-color: rgba(255,255,255,.3);
+}
+#carousel-thumbs .selected img {
+   border-color: #fff;
+}
+.carousel-control-prev,
+.carousel-control-next {width: 50px;}
+
+/******************Reserve the tour********************/
+.form-container {
+    display: block;
+    margin: 0 auto;
+}
+.info-tour {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.info-tour span {font-weight: 700;}
+.info-tour button {
+    font-size: 18px;
+    width: 100%;
+}
+.formReserve {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 10px gray;
+    height: 0;
+    overflow-y: hidden;
+}
+.slide-form {
+    height: 100%;
+    overflow-x: visible;
+    transition: 0.5s;
+}
+span.btnCloseForm,
+.btnClose {
+    cursor: pointer;
+    padding: 20px;
+    font-size: 30px;
+}
+input { border: 1px solid blue;}
+.allinclusive svg {
+    width: 40px;
+    height: 40px;
+}
+#tabs a {
+    font-weight: 700;
+}
+@media all and (max-width: 767px) {
+    .carousel-container #carousel-thumbs img {
+        border-width: 3px;
+    }
+}
+
+@media all and (min-width: 576px) {
+    .carousel-container #carousel-thumbs {
+        position: absolute;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .carousel-container #carousel-thumbs {
+        background: #ccccce;
+    }
+}

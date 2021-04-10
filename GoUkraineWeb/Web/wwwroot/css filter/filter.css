@@ -1,0 +1,56 @@
+﻿/************************FILTER**********************************/
+.filter {
+    padding: 0 20px;
+}
+input.form-check-input {
+    width: 17px;
+    height: 17px;
+}
+.form-check span {
+    font-size: 17px;
+    padding-left: 5px;
+}
+.form-check input:hover {
+    cursor: pointer;
+}
+.form-check:hover {
+    cursor: pointer;
+}
+.form-check label:hover {
+    cursor: pointer;
+}
+/************************FILTER TOGGLE*********************/
+.sidenav {
+    width: 100%;
+    position: absolute;
+    z-index: 1080;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover {color: #f1f1f1;}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidenav a {
+    font-size: 18px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+}

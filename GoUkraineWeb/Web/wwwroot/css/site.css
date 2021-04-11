@@ -93,6 +93,86 @@ a.navbar-brand {
     height: 120px;
     fill: green;
 }
+/******************TOURS******************************/
+.tours {
+    margin-top: 110px;
+    padding: 50px 0;
+}
+
+.tour {
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.place {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+.img-tour img {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.img-description {
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.date-out svg {
+    fill: #fff;
+    width: 22px;
+    height: 22px;
+}
+
+.price {
+    color: #fff;
+    padding: 5px 15px;
+}
+
+.more {
+    background: #ffd101;
+}
+
+a.more {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.more:hover {
+    background: #2a7ba8;
+    color: #ffd101;
+}
+
+a.more {
+    color: #2a7ba8;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.more a:hover {
+    color: #ffd101;
+}
+
+.star {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+    .star p {
+        color: #fff;
+        font-weight: 800;
+    }
 
 /* Sticky footer styles
 -------------------------------------------------- */

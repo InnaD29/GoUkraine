@@ -63,8 +63,8 @@ namespace Web.Controllers
         {
             return View();
         }
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public JsonResult AskToCall(ContactUsModel model)
         {
             return ExecPostAjax(() => { _emailManager.SendContactUsEmail(model); });

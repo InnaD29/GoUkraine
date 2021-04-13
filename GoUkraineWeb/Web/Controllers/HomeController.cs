@@ -1,21 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Application.Managers;
+using Application.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using Web.Controllers.Base;
 using Web.Models;
 
 namespace Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseAjaxController
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly EmailManager _emailManager;
+        public HomeController(EmailManager emailManager,
+            ILogger<HomeController> logger) : base(logger)
         {
-            _logger = logger;
+            _emailManager = emailManager;
         }
 
         public IActionResult Index()
@@ -58,11 +59,16 @@ namespace Web.Controllers
         {
             return View();
         }
-         public IActionResult Privacy()
+        public IActionResult Privacy()
         {
             return View();
         }
-
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        public JsonResult AskToCall(ContactUsModel model)
+        {
+            return ExecPostAjax(() => { _emailManager.SendContactUsEmail(model); });
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

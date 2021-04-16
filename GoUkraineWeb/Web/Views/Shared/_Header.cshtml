@@ -12,7 +12,7 @@
   </span>
   <a class="open-button" onclick="openForm()"> <span class="text">Зателефонуйте мені</span> </a>
   <div class="form-popup" id="myForm">
-    <form class="form-container bg-light rounded d-none">
+    <form class="form-container bg-light rounded">
       <span aria-hidden="true" class="btnClose d-flex justify-content-end pt-0" role="button">&times;</span>
       <p class="font-weight-bold">Введіть номер телефону</p>
       <input type="text" class="text-primary" placeholder="+38 (0ХХ) ХХХ ХХ ХХ" name="number" required>
@@ -29,7 +29,6 @@
     </form>
   </div>
 </div>
-
 <nav class="navbar navbar-expand-lg">
   <h1 class="navbar-brand logo "><img src="~/images/logo.png" alt="GoUkraine" /></h1>
   <button class="navbar-toggler navbar-dark"
@@ -56,7 +55,7 @@
         <a class="nav-link" href="/home/Tours">Пошук турів</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/home/HotTours">Гарячі тури</a>
+        <a class="nav-link" href="/home/HotTours"><img class="hot" src="~/images/hotTours/sticker-hot.png" />Гарячі тури</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/home/BusTours">Автобусні тури</a>

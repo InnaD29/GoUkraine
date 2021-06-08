@@ -12,7 +12,13 @@ header {
     width: 100%;
     z-index: 1005;
 }
-.hero-text {height: 100%;}
+span.btnCloseCallMe {
+    cursor: pointer;
+    display: block;
+}
+.hero-text {
+        height: 100%;
+}
 .hero-text {
     color: #fff;
     justify-content: center;
@@ -100,10 +106,10 @@ h2 {
     fill: green;
 }
 /******************TOURS******************************/
-.tours {
+/*.tours {
     margin-top: 110px;
     padding: 50px 0;
-}
+}*/
 
 .tour {
     position: relative;
@@ -288,10 +294,16 @@ svg.whatsapp {fill: #43d854;}
     html {
             font-size: 16px;
         }
-}
-@media (max-width: 768px) {
-   .block h2 {
+    .block h2 {
         font-size: 26px;
+    }
+}
+@media (max-width: 991px) {
+    .tours {
+        margin-top: 20px;
+    }
+    .navbar {
+        background: #232323;
     }
 }
 @media (min-width: 1200px) {

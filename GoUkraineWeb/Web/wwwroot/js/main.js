@@ -10,3 +10,4 @@ const myCarousel = new Carousel({
   autoplayTime: 3500
 }); 
 
+

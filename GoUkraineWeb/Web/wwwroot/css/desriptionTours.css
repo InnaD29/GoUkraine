@@ -8,7 +8,7 @@
    bottom: 0;
     left: 0;
 }
-.carousel-item img {object-fit: cover;}
+.carousel-item img {object-fit: cover; width: 760px}
 
 #carousel-thumbs {
     background: rgba(255,255,255,.3);
@@ -69,6 +69,11 @@ input { border: 1px solid blue;}
 .allinclusive svg {
     width: 40px;
     height: 40px;
+}
+.bus svg {
+    width: 30px;
+    height: 30px;
+    fill: #2a7ba8;
 }
 #tabs a {
     font-weight: 700;

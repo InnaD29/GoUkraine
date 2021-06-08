@@ -3,20 +3,20 @@
   <span class="vodafone">
     <svg>
       <use xlink:href="/svg/sprite.svg#vodafone_6830"></use>
-    </svg><span class="text">+38 066 995 7091</span>
+    </svg><span class="text">+380 95 409 32 96</span>
   </span>
   <span class="kyivstar">
     <svg>
       <use xlink:href="/svg/sprite.svg#Kyivstar_GSM"></use>
-    </svg><span class="text">+38 067 995 7091</span>
+    </svg><span class="text">+380 97 036 08 86</span>
   </span>
   <a class="open-button" onclick="openForm()"> <span class="text">Зателефонуйте мені</span> </a>
-  <div class="form-popup" id="myForm">
+  <div class="form-popup formCallMe" id="myForm">
     <form class="form-container bg-light rounded">
-      <span aria-hidden="true" class="btnClose d-flex justify-content-end pt-0" role="button">&times;</span>
+      <span aria-hidden="true" class="btnCloseCallMe d-flex justify-content-end pt-0">&times;</span>
       <p class="font-weight-bold">Введіть номер телефону</p>
-      <input type="text" class="text-primary" placeholder="+38 (0ХХ) ХХХ ХХ ХХ" name="number" required>
-      <button type="button" class="btn" onclick="closeForm()">Зателефонувати</button>
+      <input type="text" class="text-primary" placeholder="+38 (0ХХ) ХХХ ХХ ХХ" id="PhoneNumber" name="PhoneNumber" irequired>
+      <button type="button" class="btn callToMe" onclick="closeForm()">Зателефонувати</button>
     </form>
     <form class="form-container text-center success-form bg-light d-none">
       <p class="font-weight-bold m-0 pt-5">Дякую!</p>
@@ -58,7 +58,7 @@
         <a class="nav-link" href="/home/HotTours"><img class="hot" src="~/images/hotTours/sticker-hot.png" />Гарячі тури</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/home/BusTours">Автобусні тури</a>
+        <a class="nav-link" href="/home/BusTours">Динамічні тури</a>
       </li>
 
       <li class="nav-item">

@@ -51,6 +51,10 @@ namespace Web.Controllers
         {
             return View();
         }
+        public IActionResult DescriptionTourBus()
+        {
+            return View();
+        }
         public IActionResult Contacts()
         {
             return View();

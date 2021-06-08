@@ -1,8 +1,12 @@
 ﻿
 let header = document.querySelector('header');
 let itemsHeader = document.querySelectorAll('.text');
+let btnCloseCallMe = document.querySelector('span.btnCloseCallMe');
 
 
+btnCloseCallMe.onclick = function () {
+    document.querySelector('.formCallMe').style.display = 'none';
+}
 function openForm() {
     document.getElementById("myForm").style.display = "block";
 }
@@ -10,6 +14,7 @@ function openForm() {
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
+
 window.onscroll = function () {
     for (let i = 0; i < itemsHeader.length; i++) {
         if (window.pageYOffset === 0) {
@@ -22,5 +27,48 @@ window.onscroll = function () {
    
     } 
 } 
+let callToMe = document.querySelector('.callToMe');
+callToMe.onclick = function () {
+    let formData = {
+        "PhoneNumber": document.querySelector('#PhoneNumber').value,
+    }
+    $.ajax({
+        url: '/Home/AskToCall',
+        method: 'POST',
+        data: formData,
+        success: function (data) {
+            console.log(data)
+        },
+        error: function (data) {
+            alert('false')
+        }
 
+    });
+}
+function getRequestVerificationToken() {
+    var token = "";
+    var inputs = $('input[name="__RequestVerificationToken"]');
+    if (inputs && inputs.length > 0)
+        token = inputs[0].value;
+    return token;
+}
+function initAjaxPrefilter() {
+    $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
+        if (originalOptions.type === 'POST' || options.type === 'POST' ||
+            originalOptions.type === 'PUT' || options.type === 'PUT' ||
+            originalOptions.type === 'DELETE' || options.type === 'DELETE' ||
+            originalOptions.type === 'PATCH' || options.type === 'PATCH') {
 
+            switch (typeof options.data) {
+                case "string": if (options.data.indexOf("__RequestVerificationToken=") == -1) options.data += "&__RequestVerificationToken=" + getRequestVerificationToken() + '';
+                    break;
+                case "object": options.data.__RequestVerificationToken = getRequestVerificationToken();
+                    break;
+                default:
+            }
+        }
+    });
+}
+(function () {
+    initAjaxPrefilter();
+}());

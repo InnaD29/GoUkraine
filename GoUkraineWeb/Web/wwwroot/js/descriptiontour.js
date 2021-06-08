@@ -10,4 +10,3 @@ btnReserveTour.onclick = function () {
 btnCloseReserve.onclick = function () {
     formReserve.classList.remove('slide-form');
 }
-

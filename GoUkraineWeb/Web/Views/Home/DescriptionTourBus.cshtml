@@ -1,0 +1,291 @@
+﻿@{
+  ViewData["Title"] = "DescriptionTour Page";
+}
+
+<link href="~/css/desriptionTours.css" rel="stylesheet" />
+
+<!-- Carousel Navigation -->
+@*I WILL REPLACE ALL IMAGES*@
+<section class="container mb-5">
+  <div class="carousel-container position-relative row">
+    <div class="col-lg-8 col-sm-12 p-0">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-slide-number="0">
+            <img src="~/images/ukrtours/bakota/0.jpg" class="d-block w-100" alt="Bakota" data-remote="~/images/ukrtours/bakota/0.jpg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+          </div>
+          <div class="carousel-item" data-slide-number="1">
+            <img src="~/images/ukrtours/bakota/1.jpg" class="d-block w-100" alt="Bakota" data-remote="~/images/ukrtours/bakota/1.jpg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+          </div>
+          <div class="carousel-item" data-slide-number="2">
+            <img src="~/images/ukrtours/bakota/2.jpg" class="d-block w-100" alt="Bakota" data-remote="~/images/ukrtours/bakota/2.jpg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+          </div>
+          <div class="carousel-item" data-slide-number="3">
+            <img src="~/images/ukrtours/bakota/3.jpg" class="d-block w-100" alt="Bakota" data-remote="~/images/ukrtours/bakota/3.jpg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+          </div>
+          <div class="carousel-item" data-slide-number="4">
+            <img src="~/images/ukrtours/bakota/4.jpg" class="d-block w-100" alt="Bakota" data-remote="~/images/ukrtours/bakota/4.jpg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+          </div>
+          <div class="carousel-item" data-slide-number="5">
+            <img src="~/images/ukrtours/bakota/5.jpg" class="d-block w-100" alt="Bakota" data-remote="~/images/ukrtours/bakota/5.jpg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+          </div>
+          <div class="carousel-item" data-slide-number="6">
+            <img src="~/images/ukrtours/bakota/6.jpg" class="d-block w-100" alt="Bakota" data-remote="~/images/ukrtours/bakota/6.jpg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+          </div>
+          <div class="carousel-item" data-slide-number="7">
+            <img src="~/images/ukrtours/bakota/7.jpg" class="d-block w-100" alt="Bakota" data-remote="~/images/ukrtours/bakota/7.jpg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+          </div>
+          <div class="carousel-item" data-slide-number="8">
+            <img src="~/images/ukrtours/bakota/8.jpg" class="d-block w-100" alt="Bakota" data-remote="~/images/ukrtours/bakota/8.jpg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+          </div>
+          <div class="carousel-item" data-slide-number="9">
+            <img src="~/images/ukrtours/bakota/9.jpg" class="d-block w-100" alt="Bakota" data-remote="~/images/ukrtours/bakota/9.jpg" data-type="image" data-toggle="lightbox" data-gallery="example-gallery">
+          </div>
+        </div>
+      </div>
+      <div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row mx-0">
+              <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                <img src="~/images/ukrtours/bakota/thumb/0.jpg" class="img-fluid" alt="Bakota">
+              </div>
+              <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                <img src="~/images/ukrtours/bakota/thumb/1.jpg" class="img-fluid" alt="Bakota">
+              </div>
+              <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                <img src="~/images/ukrtours/bakota/thumb/2.jpg" class="img-fluid" alt="Bakota">
+              </div>
+              <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                <img src="~/images/ukrtours/bakota/thumb/3.jpg" class="img-fluid" alt="Bakota">
+              </div>
+              <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
+                <img src="~/images/ukrtours/bakota/thumb/4.jpg" class="img-fluid" alt="Bakota">
+              </div>
+              <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="5">
+                <img src="~/images/ukrtours/bakota/thumb/5.jpg" class="img-fluid" alt="Bakota">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row mx-0">
+              <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
+                <img src="~/images/ukrtours/bakota/thumb/6.jpg" class="img-fluid" alt="Bakota">
+              </div>
+              <div id="carousel-selector-7" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="7">
+                <img src="~/images/ukrtours/bakota/thumb/7.jpg" class="img-fluid" alt="Bakota">
+              </div>
+              <div id="carousel-selector-8" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="8">
+                <img src="~/images/ukrtours/bakota/thumb/8.jpg" class="img-fluid" alt="Bakota">
+              </div>
+              <div id="carousel-selector-9" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="9">
+                <img src="~/images/ukrtours/bakota/thumb/9.jpg" class="img-fluid" alt="Bakota">
+              </div>
+              <div class="col-2 px-1 py-2"></div>
+              <div class="col-2 px-1 py-2"></div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    @*I WILL REPLACE THE ICONS AND TEXT inside span*@
+    <div class="col-lg-4 col-sm-12  bg-light hotel-star text-dark p-0">
+      <div class="info-tour p-4">
+        <h4 class="font-weight-bold pb-3">Інформація про тур</h4>
+        <p>Дата тура: <span>з 26.07.21 до 26.06.21 </span></p>
+        <p class="mb-0 bus">
+          <span>
+            <svg>
+              <use xlink:href="/svg/sprite.svg#bus"></use>
+            </svg>
+          </span>26 червня,  <span> з Чернівців</span>
+        </p>
+        <p class="bus">
+          <span>
+            <svg>
+              <use xlink:href="/svg/sprite.svg#bus-turn"></use>
+            </svg>
+          </span>26 червня, <span> з Бакоти</span>
+        </p>
+        <p class="m-0">Тривалість туру: <span>1 день</span></p>
+        <p class="m-0">Харчування: <span>-</span></p>
+        <p class="m-0">Кількість туристів: <span>1 дорослий</span></p>
+        <p class="m-0">
+          Тип готелю:
+          <span>
+            <svg>
+              <use xlink:href="/svg/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span>
+            <svg>
+              <use xlink:href="/svg/sprite.svg#star"></use>
+            </svg>
+          </span>
+          <span>
+            <svg>
+              <use xlink:href="/svg/sprite.svg#star"></use>
+            </svg>
+          </span>
+        </p>
+        <p>Вартість тура <span> за 1 людину:</span></p>
+        <h3>380 грн.</h3>
+        <button type="button" class="btn reserveTour">Замовити тур</button>
+      </div>
+       @*    RESERVE TOUR FORM*@
+      <div class="formReserve text-right">
+        <span aria-hidden="true" role="button" class="btnCloseForm">&times;</span>
+        <form class="form-container text-center">
+          <h3>Замовити тур</h3>
+          <p class="text-center">Введіть будь ласка номер телефону та ім'я, наш агент звяжеться з Вами, щоб забронювати тур</p>
+          <input type="text" class="text-primary" placeholder="Iм'я" name="SenderName" required>
+          <input type="text" class="text-primary" placeholder="+38 (0ХХ) ХХХ ХХ ХХ" name="PhoneNumber" required>
+          <button type="button" class="btn booking">Замовити</button>
+        </form>
+        <form class="form-container text-center success-form d-none">
+          <p class="font-weight-bold pb-5">Дякую за бронювання, наш мененджер звяжеться з Вами за декілька хвилин</p>
+          <span>
+            <svg>
+              <use xlink:href="/svg/sprite.svg#check-mark"></use>
+            </svg>
+          </span>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Program of tour-->
+@*I WILL REPLACE THE ICONS AND TEXT*@
+<section class="container mt-5">
+  <h4 class="mt-5 mb-5">В програму тура включено:</h4>
+  <div class="row bg-light justify-content-center p-4">
+    <div class="col-lg-2 allinclusive text-center">
+      <span>
+        <svg>
+          <use xlink:href="/svg/sprite.svg#hotel"></use>
+        </svg>
+      </span>
+      <p class="pl-2 pr-2">-</p>
+    </div>
+
+    <div class="col-lg-2 allinclusive text-center">
+      <span>
+        <svg>
+          <use xlink:href="/svg/sprite.svg#movie-tickets"></use>
+        </svg>
+      </span>
+      <p class="pl-2 pr-2">Вхідні квитки у крепость</p>
+    </div>
+
+    <div class="col-lg-2 allinclusive text-center">
+      <span>
+        <svg>
+          <use xlink:href="/svg/sprite.svg#food-serving"></use>
+        </svg>
+      </span>
+      <p class="pl-2 pr-2">-</p>
+    </div>
+
+    <div class="col-lg-2 allinclusive text-center">
+      <span>
+        <svg>
+          <use xlink:href="/svg/sprite.svg#safe"></use>
+        </svg>
+      </span>
+      <p class="pl-2 pr-2">Страхування</p>
+    </div>
+    <div class="col-lg-2 allinclusive text-center">
+      <span>
+        <svg>
+          <use xlink:href="/svg/sprite.svg#bus"></use>
+        </svg>
+      </span>
+      <p class="pl-2 pr-2"> Переїзд</p>
+    </div>
+    <div class="col-lg-2 allinclusive text-center">
+      <span>
+        <svg>
+          <use xlink:href="/svg/sprite.svg#tour-guide"></use>
+        </svg>
+      </span>
+      <p class="pl-2 pr-2"> Екскурсії згідно програми туру</p>
+    </div>
+  </div>
+  </section>
+
+<!-- Tabs -->
+<section class="container mt-5">
+  <div id="tabs">
+    <div class="container">
+      <h3 class="section-title mt-5 mb-5">Детально</h3>
+      <div class="row">
+        <div class="col-xs-12 ">
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link" id="nav-hotel-tab" data-toggle="tab" href="#nav-hotel" role="tab" aria-controls="nav-hotel" aria-selected="true">Готель</a>
+              <a class="nav-item nav-link active" id="nav-city-tab" data-toggle="tab" href="#nav-city" role="tab" aria-controls="nav-city" aria-selected="false">Програма туру</a>
+              <a class="nav-item nav-link" id="nav-visit-tab" data-toggle="tab" href="#nav-visit" role="tab" aria-controls="nav-visit" aria-selected="false">Що відвідати</a>
+              <a class="nav-item nav-link" id="nav-fun-tab" data-toggle="tab" href="#nav-fun" role="tab" aria-controls="nav-fun" aria-selected="false">Розваги</a>
+              <a class="nav-item nav-link" id="nav-cildren-tab" data-toggle="tab" href="#nav-children" role="tab" aria-controls="nav-children" aria-selected="false">Для дітей</a>
+              <a class="nav-item nav-link" id="nav-cildren-tab" data-toggle="tab" href="#nav-children" role="tab" aria-controls="nav-children" aria-selected="false">Погода</a>
+              <a class="nav-item nav-link" id="nav-addition-tab" data-toggle="tab" href="#nav-addition" role="tab" aria-controls="nav-addition" aria-selected="false">Додатково (потрібно знати)</a>
+            </div>
+          </nav>
+          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div class="tab-pane fade" id="nav-hotel" role="tabpanel" aria-labelledby="nav-hotel-tab">
+              Без ночівлі
+            </div>
+            @*I WILL REPLACE TEXT AND IMG*@
+            <div class="tab-pane fade show active" id="nav-city" role="tabpanel" aria-labelledby="nav-city-tab">
+              <p><strong>Виїзд: 7.00: Чернівці-Хотин</strong>.</p>
+              <p><strong>Прибуття 8.00 до м. Хотин</strong>. По прибуттю до міста Хотин яке посідає помітне місце в середньовічній європейській історії.  Ми пропонуємо відвідати Хотинську фортецю яка у свій час була однією з наймогутніших у Східній Європі, під її стінами не раз сходилися численні армії. Внаслідок свого стратегічного прикордонного розташування твердиня протягом століть перебувала у складі різних держав (Київської Русі, Галицько-Волинського, Молдавського князівств; Османської, Австро-Угорської, Російської імперій), що великою мірою обумовило її архітектурний стиль, який формувався під впливом загальних європейських тенденцій, пов’язаних з розвитком воєнно-оборонного зодчества, але також набув своєрідного етнічного забарвлення. <a href="https://khotynska-fortecya.cv.ua/istoriya-khotynskoyi-fortetsi">ІСТОРІЯ ХОТИНСЬКОЇ ФОРТЕЦІ</a>.</p>
+              <p><strong>Виїзд 9.30: Хотин-Бакота</strong>.</p>
+              <p><strong>Прибуття 12.00 до Бакоти</strong>. Пропонуємо Вам екскрусію з досвідченим екскурсоводом по Бакоті — це затоплене село на Поділлі, поблизу Кам’янця-Подільського. Сьогодні це місце відоме своїми неймовірними краєвидами та тишею. Півсторіччя тому сотні родин покинули тут свої домівки та господарства. Людей виселили, а село затопили, щоби збудувати тут водосховище для потужної гідроелектростанції. Уроженцю Бакоти Тарасу Горбняку було 27 років, коли їх із родиною виселили звідси. Сьогодні він водить екскурсії місцями, де колись жив. <a href="https://ukrainer.net/bakota/">ДІЗНАЙТЕСЯ БІЛЬШЕ ПРО БАКОТУ</a>.</p>
+              <p><strong>Повернення до Чернівців час буде залежити від бажання туристів.</strong></p>
+              <h4 class="text-danger">ВАЖЛИВО!</h4>
+              <P>     n</P>
+              <p><strong>Шановні туристи! За Вашим бажанням данна екскурсія може розширюватися та змінюватися:</strong></p>
+              <ul>
+                <li>купання в р. Дністер;</li>
+                <li>катання на катері;</li>
+                <li>відвідування Кам'янець-Подільської фортеці;</li>
+                <li>смаження шишлику та риболовля на р.Дністер;</li>
+                <li>відвідування Шишкових пагорбів.</li>
+              </ul>
+              <h4 class="text-info text-center pb-5">Додатково</h4>
+              <p class="text-center"><img src="~/images/ukrtours/dnistrivka/1.jpg" /></p>
+              <p class="text-center"><img src="~/images/ukrtours/dnistrivka/2.jpg" /></p>
+              <p class="text-center"><img src="~/images/ukrtours/dnistrivka/3.jpg" /></p>
+              <p class="text-center"><img src="~/images/ukrtours/dnistrivka/4.jpg" /></p>
+            </div>
+            <div class="tab-pane fade" id="nav-visit" role="tabpanel" aria-labelledby="nav-visit-tab">
+              -
+            </div>
+            <div class="tab-pane fade" id="nav-fun" role="tabpanel" aria-labelledby="nav-fun-tab">
+              -
+            </div>
+            <div class="tab-pane fade" id="nav-children" role="tabpanel" aria-labelledby="nav-children-tab">
+              -
+            </div>
+            <div class="tab-pane fade" id="nav-addition" role="tabpanel" aria-labelledby="nav-addition-tab">
+              Додатково (потрібно знати)
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="~/js/descriptiontour.js"></script>
+<script src="~/js/Carousel.js"></script>

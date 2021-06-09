@@ -13,10 +13,13 @@ namespace Web.Controllers
         private readonly ILogger<HomeController> _logger;
 
         private readonly EmailManager _emailManager;
+        private readonly TourManager _tourManager;
         public HomeController(EmailManager emailManager,
+            TourManager tourManager,
             ILogger<HomeController> logger) : base(logger)
         {
             _emailManager = emailManager;
+            _tourManager = tourManager;
         }
 
         public IActionResult Index()
@@ -47,13 +50,9 @@ namespace Web.Controllers
         {
             return View();
         }
-        public IActionResult DescriptionTour()
+        public IActionResult TourDescription(int id)
         {
-            return View();
-        }
-        public IActionResult DescriptionTourBus()
-        {
-            return View();
+            return View(_tourManager.TourDescription(id));
         }
         public IActionResult Contacts()
         {

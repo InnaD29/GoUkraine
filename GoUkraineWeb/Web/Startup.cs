@@ -7,6 +7,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Globalization;
+using System.Threading;
 using Web.Data;
 
 namespace Web
@@ -34,6 +36,7 @@ namespace Web
 
             services.AddTransient<EmailService>();
             services.AddTransient<EmailManager>();
+            services.AddTransient<TourManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -65,6 +68,15 @@ namespace Web
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+
+            var culture = (CultureInfo)CultureInfo.GetCultureInfo("uk-UA").Clone();
+            culture.DateTimeFormat.ShortDatePattern = "dd/MM/yyyy";
+            culture.DateTimeFormat.ShortTimePattern = "HH:mm";
+            Thread.CurrentThread.CurrentCulture = culture;
+            Thread.CurrentThread.CurrentUICulture = culture;
+            
+            CultureInfo.DefaultThreadCurrentCulture = culture;
+            CultureInfo.DefaultThreadCurrentUICulture = culture;
         }
     }
 }

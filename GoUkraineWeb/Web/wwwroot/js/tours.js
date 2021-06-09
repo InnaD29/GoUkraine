@@ -1,4 +1,29 @@
-﻿function openNav() {
+﻿let selectElement = document.querySelector('#method-select');
+let ukr = document.querySelectorAll('#ptr-ukraine');
+let turk = document.querySelectorAll('#ptr-turkey');
+
+selectElement.addEventListener('change', (event) => {
+    let op = $("#method-select option:selected").attr('id');
+    if (op == "ptr-turkey-select") {
+        for (i = 0; i < ukr.length; i++) {
+            ukr[i].style.display = 'none';
+        }
+        for (i = 0; i < turk.length; i++) {
+            turk[i].style.display = 'block';
+        }
+    }
+    if (op == "ptr-ukraine-select") {
+        for (i = 0; i < ukr.length; i++) {
+            ukr[i].style.display = 'block';
+        }
+        for (i = 0; i < turk.length; i++) {
+            turk[i].style.display = 'none';
+        }
+    }
+});
+
+
+function openNav() {
     document.getElementById("mySidenav").style.display = "block";
 }
 let sidenav = document.getElementById("mySidenav");
@@ -26,7 +51,6 @@ function closeNav() {
     filter.classList.remove('sidenav');
     closebtn.style.display = "block";
 }
-
 
 
 

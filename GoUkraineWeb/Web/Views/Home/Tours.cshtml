@@ -27,7 +27,7 @@
     </div>
   </div>
 </div>
-<div class="container ">
+<div class="container choose-tour">
   <div class="row">
     <div class="col-sm-12">
       <div class="heading tours">
@@ -36,140 +36,169 @@
     </div>
   </div>
 </div>
-   @*********************BLOCK TOURS******************************@
-  <div class="container-fluid pl-5 pr-5">
-    <div class="row m-0">
-      <div class="col-md-6 col-12 sm-6 col-lg-6 col-xl-3 pb-3">
-        <div class="tour">
-          <div class="img-tour">
-            <img src="~/images/tours/9.jpg" class="img-fluid rounded" alt="Турція">
-            <div class="img-description d-flex justify-content-between">
-              <div class="price">
-                <p class="m-0">Вартість туру: 16412 грн.</p>
-                <p class="m-0">за 2 особи</p>
-              </div>
-              <a href="/home/DescriptionTour" class="more">
-                <span>Детельніше</span>
-              </a>
-            </div>
-            <div class="star hotel-star">
-              <span>
-                <svg>
-                  <use xlink:href="/svg/sprite.svg#star"></use>
-                </svg>
-              </span>
-              <span>
-                <svg>
-                  <use xlink:href="/svg/sprite.svg#star"></use>
-                </svg>
-              </span>
-              <span>
-                <svg>
-                  <use xlink:href="/svg/sprite.svg#star"></use>
-                </svg>
-              </span>
-              <span>
-                <svg>
-                  <use xlink:href="/svg/sprite.svg#star"></use>
-                </svg>
-              </span>
-              <p class="date-out">виїзд: 01.07.2021</p>
-            </div>
-          </div>
-        </div>
-        <div class="place">
-          <p class="m-0">Grand Hotel Derin 4*</p>
-          <p class="p-0">Турція, Анталья</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-12 sm-6 col-lg-6 col-xl-3 pb-3">
-        <div class="tour">
-          <div class="img-tour">
-            <img src="~/images/tours/9.jpg" class="img-fluid rounded" alt="Турція">
-            <div class="img-description d-flex justify-content-between">
-              <div class="price">
-                <p class="m-0">Вартість туру: 2000 грн.</p>
-                <p class="m-0">за людину</p>
-              </div>
-              <a href="/home/DescriptionTour" class="more">
-                <span>Детельніше</span>
-              </a>
-            </div>
-            <div class="star hotel-star">
-              <span>
-                <svg>
-                  <use xlink:href="/svg/sprite.svg#star"></use>
-                </svg>
-              </span>
-              <p class="date-out">виїзд: 18/07/21</p>
-            </div>
-          </div>
-        </div>
-        <div class="place">
-          <p class="m-0">Oz Hotels Sui Resort</p>
-          <p class="p-0">Египит, Хургада</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-12 sm-6 col-lg-6 col-xl-3 pb-3">
-        <div class="tour">
-          <div class="img-tour">
-            <img src="~/images/tours/9.jpg" class="img-fluid rounded" alt="Турція">
-            <div class="img-description d-flex justify-content-between">
-              <div class="price">
-                <p class="m-0">Вартість туру: 2000 грн.</p>
-                <p class="m-0">за людину</p>
-              </div>
-              <a href="/home/DescriptionTour" class="more">
-                <span>Детельніше</span>
-              </a>
-            </div>
-            <div class="star hotel-star">
-              <span>
-                <svg>
-                  <use xlink:href="/svg/sprite.svg#star"></use>
-                </svg>
-              </span>
-              <p class="date-out">виїзд: 18/07/21</p>
-            </div>
-          </div>
-        </div>
-        <div class="place">
-          <p class="m-0">Oz Hotels Sui Resort</p>
-          <p class="p-0">Египит, Хургада</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-12 sm-6 col-lg-6 col-xl-3 pb-3">
-        <div class="tour">
-          <div class="img-tour">
-            <img src="~/images/tours/9.jpg" class="img-fluid rounded" alt="Турція">
-            <div class="img-description d-flex justify-content-between">
-              <div class="price">
-                <p class="m-0">Вартість туру: 2000 грн.</p>
-                <p class="m-0">за людину</p>
-              </div>
-              <a href="/home/DescriptionTour" class="more">
-                <span>Детельніше</span>
-              </a>
-            </div>
-            <div class="star hotel-star">
-              <span>
-                <svg>
-                  <use xlink:href="/svg/sprite.svg#star"></use>
-                </svg>
-              </span>
-              <p class="date-out">виїзд: 18/07/21</p>
-            </div>
-          </div>
-        </div>
-        <div class="place">
-          <p class="m-0">Oz Hotels Sui Resort</p>
-          <p class="p-0">Египит, Хургада</p>
-        </div>
+<section class="container-fluid select-country">
+  <div class="row">
+    <div class="col-sm-6">
+      <h5>Обери країну</h5>
+      <div class="version-select previous-versions-cdgs">
+        <select class="form-control form-control-lg" id="method-select">
+          <option id="ptr-all-select">Всі</option>
+          <option id="ptr-albania-select">Албанія</option>
+          <option id="ptr-bulgaria-select">Болгарія</option>
+          <option id="ptr-greece-select">Греція</option>
+          <option id="ptr-georgia-select">Грузія</option>
+          <option id="ptr-egypt-select">Египет</option>
+          <option id="ptr-spain-select">Іспанія</option>
+          <option id="ptr-italy-select">Італія</option>
+          <option id="ptr-cyprus-select">Кіпр</option>
+          <option id="ptr-maldivi-select">Мальдіви</option>
+          <option id="ptr-oau-select">ОАЕ</option>
+          <option id="ptr-tanzania-select">Танзанія</option>
+          <option id="ptr-turkey-select">Турція</option>
+          <option id="ptr-ukraine-select">Україна</option>
+          <option id="ptr-france-select">Франція</option>
+          <option id="ptr-croatia-select">Хорватія</option>
+          <option id="ptr-chornogorya-select">Чорногорія</option>
+          <option id="ptr-sri-lanka-select">Шрі-Ланка</option>
+        </select>
       </div>
     </div>
   </div>
-  <script src="~/js/tours.js"></script>
+</section>
+@*********************BLOCK TOURS******************************@
+<div class="container-fluid pl-5 pr-5">
+  <div class="row m-0">
+    <div class="col-md-6 col-12 sm-6 col-lg-6 col-xl-3 pb-3" id="ptr-turkey">
+      <div class="tour">
+        <div class="img-tour">
+          <img src="/images/hotels/grand-hotel-derin/bg-tour.jpg" class="img-fluid rounded" alt="Турція">
+          <div class="img-description d-flex justify-content-between">
+            <div class="price">
+              <p class="m-0">Вартість туру: 16 412 грн.</p>
+              <p class="m-0">за 2 особи</p>
+            </div>
+            <a href="/home/DescriptionTour" class="more">
+              <span>Детельніше</span>
+            </a>
+          </div>
+          <div class="star hotel-star">
+            <span>
+              <svg>
+                <use xlink:href="/svg/sprite.svg#star"></use>
+              </svg>
+            </span>
+            <span>
+              <svg>
+                <use xlink:href="/svg/sprite.svg#star"></use>
+              </svg>
+            </span>
+            <span>
+              <svg>
+                <use xlink:href="/svg/sprite.svg#star"></use>
+              </svg>
+            </span>
+            <span>
+              <svg>
+                <use xlink:href="/svg/sprite.svg#star"></use>
+              </svg>
+            </span>
+            <p class="date-out">виїзд: 01.07.2021</p>
+          </div>
+        </div>
+      </div>
+      <div class="place">
+        <p class="m-0">Grand Hotel Derin 4*</p>
+        <p class="p-0">Турція, Анталья</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-12 sm-6 col-lg-6 col-xl-3 pb-3" id="ptr-turkey">
+      <div class="tour">
+        <div class="img-tour">
+          <img src="~/images/tours/9.jpg" class="img-fluid rounded" alt="Турція">
+          <div class="img-description d-flex justify-content-between">
+            <div class="price">
+              <p class="m-0">Вартість туру: 2000 грн.</p>
+              <p class="m-0">за людину</p>
+            </div>
+            <a href="/home/DescriptionTour" class="more">
+              <span>Детельніше</span>
+            </a>
+          </div>
+          <div class="star hotel-star">
+            <span>
+              <svg>
+                <use xlink:href="/svg/sprite.svg#star"></use>
+              </svg>
+            </span>
+            <p class="date-out">виїзд: 18/07/21</p>
+          </div>
+        </div>
+      </div>
+      <div class="place">
+        <p class="m-0">Oz Hotels Sui Resort</p>
+        <p class="p-0">Египит, Хургада</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-12 sm-6 col-lg-6 col-xl-3 pb-3" id="ptr-ukraine">
+      <div class="tour">
+        <div class="img-tour">
+          <img src="~/images/tours/9.jpg" class="img-fluid rounded" alt="Турція">
+          <div class="img-description d-flex justify-content-between">
+            <div class="price">
+              <p class="m-0">Вартість туру: 2000 грн.</p>
+              <p class="m-0">за людину</p>
+            </div>
+            <a href="/home/DescriptionTour" class="more">
+              <span>Детельніше</span>
+            </a>
+          </div>
+          <div class="star hotel-star">
+            <span>
+              <svg>
+                <use xlink:href="/svg/sprite.svg#star"></use>
+              </svg>
+            </span>
+            <p class="date-out">виїзд: 18/07/21</p>
+          </div>
+        </div>
+      </div>
+      <div class="place">
+        <p class="m-0">Oz Hotels Sui Resort</p>
+        <p class="p-0">Египит, Хургада</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-12 sm-6 col-lg-6 col-xl-3 pb-3" id="ptr-ukraine">
+      <div class="tour">
+        <div class="img-tour">
+          <img src="~/images/tours/9.jpg" class="img-fluid rounded" alt="Турція">
+          <div class="img-description d-flex justify-content-between">
+            <div class="price">
+              <p class="m-0">Вартість туру: 2000 грн.</p>
+              <p class="m-0">за людину</p>
+            </div>
+            <a href="/home/DescriptionTour" class="more">
+              <span>Детельніше</span>
+            </a>
+          </div>
+          <div class="star hotel-star">
+            <span>
+              <svg>
+                <use xlink:href="/svg/sprite.svg#star"></use>
+              </svg>
+            </span>
+            <p class="date-out">виїзд: 18/07/21</p>
+          </div>
+        </div>
+      </div>
+      <div class="place">
+        <p class="m-0">Oz Hotels Sui Resort</p>
+        <p class="p-0">Египит, Хургада</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="~/js/tours.js"></script>
 

@@ -2,6 +2,8 @@
 let header = document.querySelector('header');
 let itemsHeader = document.querySelectorAll('.text');
 let btnCloseCallMe = document.querySelector('span.btnCloseCallMe');
+let callToMe = document.querySelector('.callToMe');
+let bookingTour = document.querySelector('.bookingTour');
 
 
 btnCloseCallMe.onclick = function () {
@@ -27,7 +29,6 @@ window.onscroll = function () {
    
     } 
 } 
-let callToMe = document.querySelector('.callToMe');
 callToMe.onclick = function () {
     let formData = {
         "PhoneNumber": document.querySelector('#PhoneNumber').value,
@@ -37,7 +38,9 @@ callToMe.onclick = function () {
         method: 'POST',
         data: formData,
         success: function (data) {
-            console.log(data)
+            if (data.success === true);
+            /* document.querySelector('.success-call').style.display = 'block';*/
+            alert(true)
         },
         error: function (data) {
             alert('false')

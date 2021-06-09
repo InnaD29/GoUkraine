@@ -110,7 +110,12 @@ h2 {
     margin-top: 110px;
     padding: 50px 0;
 }*/
-
+.choose-tour {
+    margin-top: 100px;
+}
+.select-country {
+    margin: 0 50px 50px 50px;
+}
 .tour {
     position: relative;
     top: 0;
@@ -120,6 +125,8 @@ h2 {
 .place {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     padding: 10px;
+    font-size: 19px;
+    font-weight: 600;
 }
 
 .img-tour img {
@@ -145,6 +152,7 @@ h2 {
 .price {
     color: #fff;
     padding: 5px 15px;
+    font-size: 16px;
 }
 
 .more {

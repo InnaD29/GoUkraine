@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Managers\EmailManager.cs" />
+    <Compile Include="Managers\TourManager.cs" />
     <Compile Include="Models\ContactUsModel.cs" />
+    <Compile Include="Models\TourVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -60,9 +60,9 @@ img.hot {
     left: 0;
     z-index: 999;
 }
-    .block p {
-        color: #808080;
-    }
+ .block p {
+    color: #808080;
+ }
 .heading {
     padding: 50px;
     text-align: center;
@@ -96,8 +96,8 @@ h2 {
     fill: #2a7ba8;
 }
 .hotel-star svg {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     fill: #ffd101;
 }
 .success-form svg {
@@ -106,10 +106,9 @@ h2 {
     fill: green;
 }
 /******************TOURS******************************/
-/*.tours {
-    margin-top: 110px;
-    padding: 50px 0;
-}*/
+.tours-spot a  {
+    text-decoration: none;
+}
 .choose-tour {
     margin-top: 100px;
 }
@@ -120,15 +119,19 @@ h2 {
     position: relative;
     top: 0;
     width: 100%;
+    text-decoration: none;
 }
 
 .place {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    font-size: 19px;
+    padding: 10px 10px 0 10px;
+    font-size: 15px;
     font-weight: 600;
 }
-
+.place .data p {
+    color: #2a7ba8;
+    font-weight: 700;
+}
 .img-tour img {
     width: 100%;
     position: relative;
@@ -152,26 +155,31 @@ h2 {
 .price {
     color: #fff;
     padding: 5px 15px;
-    font-size: 16px;
 }
-
+.price p:first-child {
+    font-size: 18px;
+}
+.desc p {
+    color: #000000;
+}
 .more {
     background: #ffd101;
 }
 
-a.more {
+p.more {
     display: flex;
     justify-content: center;
     display: flex;
     align-items: center;
+    margin-bottom: 0;
 }
 
-.more:hover {
+p.more:hover {
     background: #2a7ba8;
     color: #ffd101;
 }
 
-a.more {
+p.more {
     color: #2a7ba8;
     font-weight: 700;
     cursor: pointer;
@@ -179,7 +187,7 @@ a.more {
     padding: 0 10px;
 }
 
-.more a:hover {
+.more p:hover {
     color: #ffd101;
 }
 
@@ -189,10 +197,10 @@ a.more {
     left: 20px;
 }
 
-    .star p {
-        color: #fff;
-        font-weight: 800;
-    }
+.star p {
+    color: #fff;
+    font-weight: 800;
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */

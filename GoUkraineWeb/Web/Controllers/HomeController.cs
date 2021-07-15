@@ -66,6 +66,22 @@ namespace Web.Controllers
         {
             return View();
         }
+        public IActionResult EventsHome0()
+        {
+            return View();
+        }
+        public IActionResult EventsHome1()
+        {
+            return View();
+        }
+        public IActionResult EventsHome2()
+        {
+            return View();
+        }
+        public IActionResult EventsHome3()
+        {
+            return View();
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public JsonResult AskToCall(ContactUsModel model)

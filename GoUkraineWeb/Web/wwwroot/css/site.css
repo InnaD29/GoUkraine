@@ -1,4 +1,7 @@
 ﻿body {font-family: 'Segoe UI' Arial, Helvetica, sans-serif;}
+.margin-page { 
+    margin: 170px 0 40px 0;
+}
 .page {
     position: relative;
     top: 130px;
